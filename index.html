@@ -37,7 +37,7 @@
             </button>
           </div>
         </div>
-        <div class="w-full md:w-1/3 mt-4">
+        <div class="w-full md:w-1/3 mt-8">
           <img src="/images/image2.jpg" class="max-w-full h-auto rounded-bl-[50%] rounded-tr-[50%]" />
         </div>
       </div>
@@ -91,29 +91,44 @@
       </div>
 
       <div class="-mt-12 px-20 flex gap-4 z-10 relative">
-        <div class="bg-blue">
-          Test
+        <div class="bg-[#3D458E] text-white w-full flex flex-col gap-6 md:w-1/2 rounded-2xl p-6">
+          <img src="/images/image8.png" class="mx-auto" />
+          <div class="text-4xl px-4">
+            Good Night
+          </div>
+          <div class="font-light px-4">
+            Remifin products, backed by over 35 clinical studies and more than 13,000 woman, provide clinically proven relief of menopausal symptoms such as hot flashes, night sweats, irritability and mood swings.
+          </div>
+          <img src="/images/image5.png" class="rounded-xl mx-4" />
         </div>
-        <div class="bg-rose-200">
-          Test
+        <div class="bg-[#F0D9E9] text-[#BC47A8] w-full flex flex-col gap-6 md:w-1/2 rounded-2xl p-6">
+          <img src="/images/image9.png" class="mx-auto" />
+          <div class="text-4xl px-4">
+            Good Night
+          </div>
+          <div class="font-light px-4">
+            Remifin products, backed by over 35 clinical studies and more than 13,000 woman, provide clinically proven relief of menopausal symptoms such as hot flashes, night sweats, irritability and mood swings.
+          </div>
+          <img src="/images/image5.png" class="rounded-xl mx-4" />
         </div>
       </div>
 
-      <form id="contactForm" class="space-y-4 mt-20 p-6 max-w-[600px] bg-[#F0D9E9] rounded-md text-[#BC47A8] mx-auto">
+      <form id="contactForm" class="space-y-4 mt-16 p-6 max-w-[600px] bg-[#F0D9E9] rounded-2xl text-[#BC47A8] mx-auto">
+        <div class="text-3xl font-semibold text-center">Newsletteranmeldung</div>
         <div>
-          <label for="name" class="block font-medium">Name</label>
-          <input type="text" id="name" name="name" required
-            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm text-black" />
+          <label for="name" class="block font-medium">Vorname</label>
+          <input type="text" id="firstName" name="firstName" required
+            class="mt-1 p-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm text-black" />
+        </div>
+        <div>
+          <label for="name" class="block font-medium">Nachname</label>
+          <input type="text" id="lastName" name="lastName" required
+            class="mt-1 p-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm text-black" />
         </div>
         <div>
           <label for="email" class="block font-medium">E-Mail</label>
           <input type="email" id="email" name="email" required
-            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm text-black" />
-        </div>
-        <div>
-          <label for="message" class="block font-medium">Nachricht</label>
-          <textarea id="message" name="message" rows="4" required
-            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm text-black"></textarea>
+            class="mt-1 p-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm text-black" />
         </div>
         <button type="submit" 
           class="w-full bg-[#BC47A8] text-white py-2 px-4 rounded-md hover:bg-[#a0308d] focus:ring-2 focus:ring-[BC47A8] focus:ring-offset-2">

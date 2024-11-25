@@ -5,7 +5,7 @@ export default defineConfig({
     open: true,
     proxy: {
       '/api': {
-        target: 'https://support.maileon.com',
+        target: 'https://api.maileon.com/1.0',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
       },

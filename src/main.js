@@ -6,33 +6,32 @@ document.getElementById('contactForm').addEventListener('submit', async function
   const responseMessage = document.getElementById('responseMessage');
   responseMessage.textContent = '';
 
-  const formData = {
-    name: document.getElementById('name').value,
-    email: document.getElementById('email').value,
-    message: document.getElementById('message').value
+  const email = document.getElementById('email').value
+
+  const standardFields = {
+    firstName: document.getElementById('firstName').value,
+    lastName: document.getElementById('lastName').value,
   };
 
-  console.log(apiKey, formData);
-
   try {
-    const response = await fetch('/api/support/rest-api-1-0/', {
+    const response = await fetch(`/api/contacts/email/${email}`, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/vnd.maileon.api+json',
         'Authorization': `Basic ${apiKey}`
       },
-      body: JSON.stringify(formData)
+      body: JSON.stringify({ standard_fields: standardFields }),
     });
 
     if (response.ok) {
-      responseMessage.textContent = 'Nachricht wurde erfolgreich gesendet!';
+      responseMessage.textContent = 'Erfolgreich angemeldet!';
       responseMessage.className = 'text-green-600';
     } else {
-      responseMessage.textContent = 'Fehler beim Senden der Nachricht. Bitte versuchen Sie es erneut.';
+      responseMessage.textContent = 'Fehler beim Anmelden für den Newsletter. Bitte versuchen Sie es erneut.';
       responseMessage.className = 'text-red-600';
     }
   } catch (error) {
-    responseMessage.textContent = 'Netzwerkfehler. Bitte überprüfen Sie Ihre Internetverbindung.';
+    responseMessage.textContent = 'Beim Anmelden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie den Support.';
     responseMessage.className = 'text-red-600';
   }
 });
