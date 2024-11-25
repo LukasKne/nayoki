@@ -24,7 +24,7 @@
       </div>
 
       <div class="bg-gradient-to-b from-[#BC47A8] flex flex-wrap">
-        <div class="w-full md:w-2/3 text-white text-5xl p-6 flex-content">
+        <div class="w-full md:w-2/3 text-white text-5xl md:text-7xl p-6 flex-content">
           <div>
             HELLO <br/>
             MENOPAUSE.<br/>
@@ -38,32 +38,103 @@
           </div>
         </div>
         <div class="w-full md:w-1/3 mt-4">
-          <img src="images/image2.jpg" class="max-w-full h-auto rounded-bl-[50%] rounded-tr-[50%]" />
+          <img src="../images/image2.jpg" class="max-w-full h-auto rounded-bl-[50%] rounded-tr-[50%]" />
         </div>
       </div>
 
       <div class="bg-white p-6 text-[#BC47A8]">
-        <div class="bg-[#F0D9E9] rounded-2xl flex flex-wrap p-6 min-h-[340px]">
-          <div class="relative flex-content w-full md:w-1/2">
-            <img src="images/image4.jpg" class="rounded-tl-[50%] w-60 rounded-br-[50%] shadow-lg z-10 mx-auto" />
-            <div class="absolute left-7 top-1 w-60 bg-[#BC47A8] h-[272px] rounded-tl-[50%] rounded-br-[50%]"></div>
+        <div class="bg-[#F0D9E9] rounded-2xl flex flex-wrap px-12 py-6">
+          <div class="flex-auto w-full md:w-1/2 flex justify-center">
+            <div class="relative">
+              <img src="../images/image4.jpg" class="rounded-tl-[50%] rounded-br-[50%] z-10 relative w-full h-full" />
+              <div class="absolute left-1 top-1 bg-[#BC47A8] rounded-tl-[50%] rounded-br-[50%] z-0 w-full h-full"></div>
+            </div>
           </div>
-          <div class="flex-auto  w-1/2">
+          <div class="flex-auto w-full md:w-1/2 pt-4 md:pl-4">
             <div class="text-3xl font-semibold">Menopause <br/> Symptoms Relief</div>
             <div class="mt-4">
-              <p class="text-sm">Menopause is a natural biological process. But the physical symptoms, such as hot flashes, and emotional symptoms of menopause may disrupt your sleep, lower your energy or affect emotional health. There are many effective treatments available, from lifestyle adjustments to hormone therapy.</p>
+              <p class="text-sm font-light">Menopause is a natural biological process. But the physical symptoms, such as hot flashes, and emotional symptoms of menopause may disrupt your sleep, lower your energy or affect emotional health. There are many effective treatments available, from lifestyle adjustments to hormone therapy.</p>
             </div>
+            <img src="../images/image5.png" class="mt-4 rounded-lg w-full max-w-[360px]" />
           </div>
         </div>
       </div>
+
+      <div class="flex flex-wrap text-[#BC47A8] p-6">
+        <div class="w-full md:w-1/2 pr-0 md:pr-4 mb-4 md:mb-0">
+          <div class="text-3xl font-semibold">Understanding and Managing the Transition</div>
+          <div class="mt-4">
+            <p class="text-sm font-light">Menopause is a natural biological process. But the physical symptoms, such as hot flashes, and emotional symptoms of menopause may disrupt your sleep, lower your energy or affect emotional health. There are many effective treatments available, from lifestyle adjustments to hormone therapy.</p>
+          </div>
+          <div class="mt-4">
+            <p class="text-sm font-light">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+          <img src="../images/image5.png" class="mt-4 rounded-lg w-full max-w-[360px] border-2 border-[#BC47A8]" />
+        </div>
+        <div class="w-full md:w-1/2 flex items-center justify-center">
+          <img src="../images/image6.jpg" class="rounded-bl-[50%] rounded-tr-[50%] max-w-[420px]" />
+        </div>
+      </div>
+
+      <div class="relative">
+        <img src="../images/image7.jpg" class="w-full h-auto" />
+        <div class="absolute top-6 right-8 md:top-8 md:right-10 xl:top-16 xl:right-20 text-[#3D458E]">
+          <div class="text-5xl md:text-7xl xl:text-[6rem] xl:leading-[6.5rem]">
+            EFFECTIVE<br/> AND SAFE!
+          </div>
+          <div class="md:text-2xl xl:text-3xl">
+            The Remifemin Product Family
+          </div>
+        </div>
+      </div>
+
+      <div class="-mt-12 px-20 flex gap-4 z-10 relative">
+        <div class="bg-blue">
+          Test
+        </div>
+        <div class="bg-rose-200">
+          Test
+        </div>
+      </div>
+
+      <form id="contactForm" class="space-y-4 mt-20">
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+          <input type="text" id="name" name="name" required 
+            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">E-Mail</label>
+          <input type="email" id="email" name="email" required
+                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+        </div>
+        <div>
+          <label for="message" class="block text-sm font-medium text-gray-700">Nachricht</label>
+          <textarea id="message" name="message" rows="4" required
+            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"></textarea>
+        </div>
+        <button type="submit" 
+          class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+          Senden
+        </button>
+        <p id="responseMessage" class="text-sm mt-4"></p>
+      </form>
     </main>
 
-    <footer class="bg-gray-800 text-white py-6">
-      <div class="container mx-auto text-center">
-        <p>&copy; 2024 Meine Landing Page. Alle Rechte vorbehalten.</p>
+    <footer class="my-6">
+      <img src="../images/logo.jpeg" class="mx-auto" />
+      <div class="container mx-auto text-center text-sm">
+        <p>&copy; Schaper & Brümmer GmbH & Co. KG - Bahnhofstr. 35, 38259 Salzgitter - Alle Rechte vorbehalten</p>
+      </div>
+      <div class="flex mx-auto justify-center text-sm gap-6 mt-4">
+        <span>Kontakt</span> 
+        <span>Impressum</span> 
+        <span>Datenschutz</span>
       </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script type="module" src="../src/main.js"></script>
   </body>
 </html>
