@@ -25,7 +25,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
 
     if (response.ok) {
       responseMessage.textContent = 'Erfolgreich angemeldet!';
-      responseMessage.className = 'text-green-600';
+      
     } else {
       responseMessage.textContent = 'Fehler beim Anmelden für den Newsletter. Bitte versuchen Sie es erneut.';
       responseMessage.className = 'text-red-600';
